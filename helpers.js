@@ -13,4 +13,10 @@ function keyPressed() {
       resetSketch();
     }
   }
-  
+
+function saveNumberedFrame(nFrames) {
+  if (frameCount - 1 < nFrames) {
+    let zfill = nFrames.toString().length
+    saveCanvas(`frame_${('0'.repeat(zfill) + frameCount).slice(-zfill)}`);
+  }
+}
