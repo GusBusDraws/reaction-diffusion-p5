@@ -21,5 +21,7 @@ npm install @types/p5
 
 ## Change Log
 ### 2025-02-16
+- Rework reaction diffusion to start from wonky circle
+- Add `saveNumberedFrame` to `helpers.js`
 - Create first iteration from tutorial
 - Create project from p5js-template
